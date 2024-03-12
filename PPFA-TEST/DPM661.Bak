@@ -1,0 +1,95 @@
+  /*&& PELS PRO DOT    = 2:1*/
+  /*&& HOR. SNAPPING   = 1.00*/
+  /*&& VERT. SNAPPING  = 1.00*/
+  /*&& HOR. UNIT       = UNIT*/
+  /*&& VERT. UNIT      = UNIT*/
+  /*&& DEFAULT FONT1   = GT0A*/
+  /*&& DEFAULT FONT2   = GT0A*/
+  /*&& DEFAULT FONT3   = GT0A*/
+  /*&& DEFAULT FONT4   = GT0A*/
+  /*&& LINE DATA       = DPM661.TXT*/
+  /*&& LINE DATA PARS1 = CHTYPE=ANSI TRC=NO */
+  /*&& LINE DATA PARS2 = RECFM=VAR */
+  /*&& LINE DATA CDP   = 1252*/
+  /*&& PRMODE          = SOSI2*/
+
+SETUNITS  10.00 CPI  6.00 LPI LINESP  6.00 LPI ;
+FORMDEF DPM661
+      DUPLEX NO
+      PELSPERINCH 240
+      OFFSET  0.00 MM   0.00 MM 
+      PRESENT PORTRAIT
+      DIRECTION ACROSS
+      CUTSHEET NO
+      REPLACE YES;
+  /*DPM661*/
+
+ COPYGROUP DPM661
+      DUPLEX NO
+      PELSPERINCH 240
+      PRESENT PORTRAIT
+      DIRECTION ACROSS
+      CUTSHEET NO;
+  /*DPM661*/
+  OVERLAY DPM661 DPM661 NORASTER;
+  SUBGROUP
+      FRONT
+      OVERLAY
+       DPM661;
+
+
+SETUNITS  10.00 CPI  6.00 LPI LINESP  6.00 LPI ;
+PAGEDEF DPM661
+      WIDTH  210.00 MM 
+      HEIGHT  297.00 MM 
+      DIRECTION ACROSS
+      PELSPERINCH 240
+      REPLACE YES;
+  /*  [[ISIS FF PAGEDEF]]
+  [[]]
+  [[]]
+  [[]]
+  [[000]]
+  [[MDY]]
+  [[]]
+  [[]]
+  */
+  /*DPM661*/
+ FONT BEL10N BEL10N
+      ROTATION 0;
+ FONT LC007N LC007N
+      ROTATION 0;
+
+ PAGEFORMAT DPM661
+             WIDTH  210.00 MM 
+             HEIGHT  297.00 MM 
+             DIRECTION ACROSS
+             PELSPERINCH 240;
+  /*DPM661*/
+  OVERLAY DPM661;
+   PRINTLINE
+      CHANNEL 1
+      FONT BEL10N
+      POSITION  115.00 MM  85.00 MM ;
+  /*Fecha*/
+   PRINTLINE
+      REPEAT 6
+      CHANNEL 1
+      FONT BEL10N
+      POSITION  115.00 MM  54.00 MM ;
+  /*Dirección*/
+   PRINTLINE
+      REPEAT 2
+      CHANNEL 1
+      FONT BEL10N
+      POSITION  52.77 MM  103.61 MM ;
+  /*Asunto*/
+   PRINTLINE
+      REPEAT 12
+      CHANNEL 1
+      FONT LC007N
+      POSITION  38.00 MM  151.24 MM ;
+  /*CuerpoLineas*/
+
+
+
