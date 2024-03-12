@@ -1,0 +1,52 @@
+11                                                                   DON
+                                                                     RITU
+                                                                     RETUERTO GOMEZ
+ 1                                                                   AV PERDE
+
+                                                                     28003 MADRID
+ 1Madrid, 13 de Julio de 2006
+ 1Con esta fecha transferimos a la cuenta domiciliataria IBAN ES11 2222 3333 4444 5555 6666 7777 8888 99
+ 1abierta en la entidad BANCO HIPOTECARIO DE ESPAÑA, S.A.
+ 1             GUTIERREZ GIL J. KARLOS PEDRO                         MANOLO GUTIERREZ MONTALBAN
+ 1     0000000171
+ 1                                                                                                1
+223106 TESORO DIA ABONO INTERESES ES03106000120000004051209                 1.000,00         40,00         7,20        32,80                      32,80
+ 23106 TESORO DIA ABONO INTERESES ES03106000120000001051209                 3.000,00        120,00        21,60        98,40                      98,40
+ 23106 TESORO DIA ABONO INTERESES ES03106000120000006051209                10.000,00        400,00        72,00       328,00                     328,00
+ 23106 TESORO DIA AMORTIZACION    ES03106000120000006051209                10.000,00                       0,00                 6.100,00       6.100,00
+ 2                LIQUIDO A CUENTA  DE PAGO                                                                                     4.000,00       4.000,00
+ 23106 TESORO DIA ABONO INTERESES ES03106000120000002051209                 2.000,00         80,00        14,40        65,60                      65,60
+ 23106 TESORO DIA AMORTIZACION    ES03106000120000002051209                 2.000,00                       0,00                 1.020,00       1.020,00
+ 2                LIQUIDO A CUENTA  DE PAGO                                                                                     1.000,00       1.000,00
+ 23106 TESORO DIA ABONO INTERESES ES03106000120000003051209                 4.000,00        160,00        28,80       131,20                     131,20
+ 23106 TESORO DIA ABONO INTERESES ES03106000120000005051209                 2.000,00         80,00        14,40        65,60                      65,60
+ 2                                                                                                                                       ---------------
+ 2                                                                                                 TOTAL PAGOS .............                  12.841,60
+ 2                                                                                                 AMORTIZACION CTA PAGO        5.000,00       5.000,00-
+ 2                                                                                                 COMISION TRANSFERENCIA ..                      76,85-
+ 2                                                                                                 TOTAL ADEUDOS ...........                   5.076,85-
+ 2                                                                                                                                       ---------------
+ 2                                                                                                 IMPORTE NETO A SU FAVOR                     7.764,75
+ 2                                                                                                                                       ===============
+3 Linea de notas de hasta 150 posiciones bla, bla, bla, bla, bla, bla,  bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, bla, y bla, bla, bla.
+11                                                                   DON
+                                                                     CARLOS ALBERTO
+                                                                     RODRÍGUEZ Y FERNÁNDEZ
+ 1                                                                   AV PEDREÑUELAS
+
+                                                                     28003 MADRID
+ 1Madrid, 13 de Julio de 2006
+ 1Con esta fecha depositamos en la cuenta de pago del Banco de España número 9000-0001-21-0720000171
+ 1BANCO HIPOTECARIO DE ESPAÑA, S.A.
+ 1             GUTIERREZ GIL J. KARLOS PEDRO                         MANOLO GUTIERREZ MONTALBAN
+ 1     0000000171
+ 1                                                                                                1
+223106 TESORO DIA AMORTIZACION    ES03106000120000005051209                 2.000,00                       0,00                 2.020,00       2.020,00
+ 23106 TESORO DIA AMORTIZACION    ES03106000120000003051209                 4.000,00                       0,00                 4.040,00       4.040,00
+ 23106 TESORO DIA AMORTIZACION    ES03106000120000001051209                 3.000,00                       0,00                 3.030,00       3.030,00
+ 23106 TESORO DIA AMORTIZACION    ES03106000120000004051209                 1.000,00                       0,00                 1.010,00       1.010,00
+ 2                                                                                                                                       ---------------
+ 2                                                                                                 TOTAL PAGOS .............                  10.100,00
+ 2                                                                                                                                       ---------------
+ 2                                                                                                 IMPORTE NETO A SU FAVOR                    10.100,00
+ 2                                                                                                                                       ===============
