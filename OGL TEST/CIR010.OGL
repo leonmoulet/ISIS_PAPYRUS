@@ -1,0 +1,398 @@
+ -'&&OverView OGL (ISIS Papyrus 1988-2021)'
+ -'&& OverView Windows '
+ -'&& Compiled : 2021-09-20'
+ -'&& SYSTEM          = MVS'
+ -'&& OGL VERSION     = 1.2'
+ -'&& PELS PRO DOT    = 2:1'
+ -'&& HOR. SNAPPING   = 1.00'
+ -'&& VERT. SNAPPING  = 1.00'
+ -'&& LINE_THICKNESS  = MEDIUM'
+ -'&& LINE_TYPE       = SOLID'
+ -'&& SHADE_PATTERN   = '
+ -'&& SHADE_TYPE      = '
+ -'&& ORIENTATION     = 0'
+ -'&& FORMAT          = MODERN'
+ -'&& HOR. PLACEMENT  = CENTER'
+ -'&& VERT. PLACEMENT = CENTER'
+ -'&& HOR. UNIT       = MM'
+ -'&& VERT. UNIT      = MM'
+ -'&& LINE SPACING    = AUTO'
+ -'&& CONDENSED WRITE = NOT'
+ -'&& FAST DRAWING    = 0'
+ -'&& WORD WRAPPING   = NOT'
+
+
+  SETUNITS 1.00 MM 1.00 MM 
+      LINESP 6.00 LPI ;
+  OVERLAY CIR010
+      SIZE 210.00 MM 297.00 MM 
+      OFFSET 0.00 MM 0.00 MM ;
+  CONTROL NOSTORE ALL NOSUMMARY ;
+  ORIENT 0 ;
+
+  SETUNITS POSITIONING CENTER ;
+  DEFINE COL00000 COLOR RGB RVAL 0 GVAL 0 BVAL 0 ;
+
+  FONT BER10N BER10N ;
+  FONT BEL75N BEL75N ;
+  FONT BEL04B BEL04B ;
+  FONT BEL10B BEL10B ;
+  FONT BEL10I BEL10I ;
+  FONT BEL10N BEL10N ;
+  FONT BEL07N BEL07N ;
+
+  SEGMENT SG0000 BELOGO  DDNAME SEGDD ;
+  SEGMENT SG0001 SELCIR  DDNAME SEGDD ;
+  SEGMENT SG0002 CIRAVR  DDNAME SEGDD ;
+  SEGMENT CIRAV1 CIRAV1  DDNAME SEGDD ;
+
+
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 15.24 MM ;
+  PLACE SEGID SG0000 ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 34.04 MM ;
+  PLACE SEGID SG0001 ;
+ -'&& COLOR           = COL00000'
+
+  POSITION ABSOLUTE 35.05 MM ABSOLUTE 260.35 MM ;
+  DRAWRULE ACROSS 14.99 MM LIGHT SOLID COLOR COL00000 ;
+  POSITION ABSOLUTE 54.00 MM ABSOLUTE 243.00 MM ;
+  PLACE SEGID CIRAV1 ;
+  POSITION ABSOLUTE 115.00 MM ABSOLUTE 19.00 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'Departamento de Información Financiera y'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'CIR'
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 284.50 MM ;
+  SETTEXT 0 MODERN LEFT SPACED 6.05 LPI 
+      LINE BEL75N SOSI2 NOUNDERLINE CHAR 
+        'Calle Alcalá, 48   28014 Madrid  Unidad de '
+           SOSI2 NOUNDERLINE CHAR 
+        'Atención Usuarios de la CIR    Tel.  91 388 6166 '
+           ;
+  POSITION ABSOLUTE 6.00 MM ABSOLUTE 285.00 MM ;
+  SETTEXT 0 MODERN LEFT SPACED 6.05 LPI 
+      LINE BEL04B SOSI2 NOUNDERLINE CHAR 
+        'CIR010'
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 96.00 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        'Expediente:'
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 103.30 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        'Asunto:'
+           ;
+  POSITION ABSOLUTE 50.00 MM ABSOLUTE 103.30 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BEL10I SOSI2 NOUNDERLINE CHAR 
+        'Solicitud de datos suministrados a la Central de '
+           SOSI2 NOUNDERLINE CHAR 
+        'Información de Riesgos (CIR)'
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 107.00 MM ;
+  DRAWBOX 150.00 MM 27.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 3.60 MM 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'Me refiero a su escrito dirigido a este '
+           SOSI2 NOUNDERLINE CHAR 
+        'Departamento de Información Financiera y CIR del '
+           SOSI2 NOUNDERLINE CHAR 
+        'Banco'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'de España, mediante el que solicita el acceso a '
+           SOSI2 NOUNDERLINE CHAR 
+        'los datos declarados a la CIR. El tratamiento de'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'datos efectuado por la CIR se regula por su '
+           SOSI2 NOUNDERLINE CHAR 
+        'normativa específica y, en particular, el '
+           SOSI2 NOUNDERLINE CHAR 
+        'ejercicio del'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'derecho de acceso a los datos personales '
+           SOSI2 NOUNDERLINE CHAR 
+        'tratados por la misma se rige por lo dispuesto '
+           SOSI2 NOUNDERLINE CHAR 
+        'en el'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'artículo 65 de la Ley 44/2002, de 22 de '
+           SOSI2 NOUNDERLINE CHAR 
+        'noviembre, de Medidas de Reforma del Sistema'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'Financiero, desarrollada por la Circular 1/2013, '
+           SOSI2 NOUNDERLINE CHAR 
+        'de 24 de mayo, del Banco de España, sobre la'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'Central de Información de Riesgos.               '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           SOSI2 NOUNDERLINE CHAR 
+        '            '
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 136.00 MM ;
+  DRAWBOX 150.00 MM 23.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 3.60 MM 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'En contestación a su solicitud, adjunto '
+           SOSI2 NOUNDERLINE CHAR 
+        'remitimos los informes con los datos facilitados '
+           SOSI2 NOUNDERLINE CHAR 
+        'por las'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'entidades declarantes, a la fecha de proceso y a '
+           SOSI2 NOUNDERLINE CHAR 
+        'nombre de los titulares que se relacionan al'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'dorso de este documento. Para garantizar su '
+           SOSI2 NOUNDERLINE CHAR 
+        'exactitud, los datos identificativos de los '
+           SOSI2 NOUNDERLINE CHAR 
+        'titulares'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'facilitados por las entidades declarantes son '
+           SOSI2 NOUNDERLINE CHAR 
+        'cotejados con los datos obrantes en los '
+           SOSI2 NOUNDERLINE CHAR 
+        'servicios de'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'verificación y consulta de datos de identidad '
+           SOSI2 NOUNDERLINE CHAR 
+        '(SVDI) de la plataforma de intermediación de '
+           SOSI2 NOUNDERLINE CHAR 
+        'datos'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'de la Administración Pública.                    '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           SOSI2 NOUNDERLINE CHAR 
+        '          '
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 160.80 MM ;
+  DRAWBOX 150.00 MM 13.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 3.60 MM 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'Le comunicamos que en el informe de riesgos, '
+           SOSI2 NOUNDERLINE CHAR 
+        'cuando un titular no figura declarado por ninguna'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'entidad, no aparecen datos y se especifica esta '
+           SOSI2 NOUNDERLINE CHAR 
+        'situación en un único documento. En caso'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'contrario, los datos declarados por cada '
+           SOSI2 NOUNDERLINE CHAR 
+        'entidad, se relacionan en dos documentos '
+           SOSI2 NOUNDERLINE CHAR 
+        'diferentes:    '
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 175.80 MM ;
+  DRAWBOX 150.00 MM 5.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        '- Un informe con el detalle por entidades, para '
+           SOSI2 NOUNDERLINE CHAR 
+        'uso exclusivo del propio interesado.'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 183.50 MM ;
+  DRAWBOX 150.00 MM 12.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 3.60 MM 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        '- Otro, resumido, en el que no figura el dato de '
+           SOSI2 NOUNDERLINE CHAR 
+        'la entidad declarante, que es el que envía a '
+           SOSI2 NOUNDERLINE CHAR 
+        'éstas'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'cuando solicitan la información, preservando así '
+           SOSI2 NOUNDERLINE CHAR 
+        'la confidencialidad de los acreditados en cuanto'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'a la entidades con las que trabajan, tal como '
+           SOSI2 NOUNDERLINE CHAR 
+        'establece la normativa.                          '
+           SOSI2 NOUNDERLINE CHAR 
+        '     '
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 197.50 MM ;
+  DRAWBOX 150.00 MM 16.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 3.60 MM 
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        'Ponemos en su conocimiento que es posible '
+           SOSI2 NOUNDERLINE CHAR 
+        'solicitar y recibir los informes de Riesgos'
+           
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        'de la CIR a través del siguiente enlace a la '
+           SOSI2 NOUNDERLINE CHAR 
+        'Oficina Virtual del Banco de España,'
+           
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        'https://sedeelectronica.bde.es/websede/es/. El '
+           SOSI2 NOUNDERLINE CHAR 
+        'único requisito imprescindible es'
+           
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        'disponer de certificado electrónico admitido por '
+           SOSI2 NOUNDERLINE CHAR 
+        'el Banco de España o DNI electrónico.'
+           
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10B SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 215.50 MM ;
+  DRAWBOX 150.00 MM 21.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 3.60 MM 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'Asimismo, en caso de que considere que los datos '
+           SOSI2 NOUNDERLINE CHAR 
+        'incluidos en su informe de riesgos son'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'inexactos o incompletos, podrá solicitar al '
+           SOSI2 NOUNDERLINE CHAR 
+        'Banco de España que tramite la rectificación o'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'cancelación de los mismos ante las entidades '
+           SOSI2 NOUNDERLINE CHAR 
+        'declarantes, a través del siguiente procedimiento'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'cuyo enlace se facilita:                         '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                    '
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'https://sedeelectronica.bde.es/sede/es/menu/tramites/Rec'
+           SOSI2 NOUNDERLINE CHAR 
+        'lamacion_con_6492b7714582d21.html'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 240.00 MM ;
+  DRAWBOX 150.00 MM 5.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        'Atentamente,'
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BEL10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 35.00 MM ABSOLUTE 261.00 MM ;
+  DRAWBOX 150.00 MM 15.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO SPACED 22.00 PEL 
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        'Le informamos de que los datos personales '
+           SOSI2 NOUNDERLINE CHAR 
+        'facilitados por ud. son objeto de tratamiento '
+           SOSI2 NOUNDERLINE CHAR 
+        'por el Banco de España, por resultar necesarios '
+           SOSI2 NOUNDERLINE CHAR 
+        'para la'
+           
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        'tramitación de su solicitud o consulta. Puede '
+           SOSI2 NOUNDERLINE CHAR 
+        'ejercer sus derechos de acceso, rectificación, '
+           SOSI2 NOUNDERLINE CHAR 
+        'oposición y supresión, así como los demás '
+           SOSI2 NOUNDERLINE CHAR 
+        'derechos'
+           
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        'que se indican en la Política de Privacidad '
+           SOSI2 NOUNDERLINE CHAR 
+        'disponible en www.bde.es, acreditando su '
+           SOSI2 NOUNDERLINE CHAR 
+        'identidad, ya sea presencialmente, por correo '
+           SOSI2 NOUNDERLINE CHAR 
+        'postal a'
+           
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        'C/Alcalá 48, 28014, Madrid (A/A Delegada de '
+           SOSI2 NOUNDERLINE CHAR 
+        'Protección de Datos) o electrónicamente a través '
+           SOSI2 NOUNDERLINE CHAR 
+        'del procedimiento específico de ejercicio de'
+           
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        'derechos en materia de protección de datos '
+           SOSI2 NOUNDERLINE CHAR 
+        'disponible en la Sede Electrónica del Banco de '
+           SOSI2 NOUNDERLINE CHAR 
+        'España. Para más información, consulte nuestro'
+           
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        'Registro de Actividades de Tratamiento '
+           SOSI2 NOUNDERLINE CHAR 
+        'disponible en www.bde.es. '
+           ;
