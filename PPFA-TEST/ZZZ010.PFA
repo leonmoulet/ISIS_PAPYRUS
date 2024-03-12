@@ -1,0 +1,207 @@
+  /*&& PELS PRO DOT    = 2:1*/
+  /*&& HOR. SNAPPING   = 1.00*/
+  /*&& VERT. SNAPPING  = 1.00*/
+  /*&& HOR. UNIT       = UNIT*/
+  /*&& VERT. UNIT      = UNIT*/
+  /*&& DEFAULT FONT1   = GT0A*/
+  /*&& DEFAULT FONT2   = GT0A*/
+  /*&& DEFAULT FONT3   = GT0A*/
+  /*&& DEFAULT FONT4   = GT0A*/
+  /*&& LINE DATA       = ZZZ010.TXT*/
+  /*&& LINE DATA PARS1 = CHTYPE=NO TRC=NO */
+  /*&& LINE DATA PARS2 = RECFM=VAR */
+  /*&& LINE DATA CDP   = 850*/
+  /*&& PRMODE          = SOSI2*/
+
+  /*************************************************************
+                                                            
+  ELIXIR PAGE DEFINITION CIR010                             
+                                                            
+  NAME:           CIR010                                    
+  CREATED:        ENE-2007                                  
+                                                            
+  COMMENTS:                                                 
+  UTILIZA 2 OVERLAYS INVOCADOS DINAMICAMENTE POR LOS DATOS  
+  VARIABLES: CIR002 Y CIR003, ESCRITOS EN DUPLEX.           
+  EL LISTADO COMIENZA CON UN CIR002 Y UN NUMERO NO FIJO     
+  DE CIR003.                                                
+  CUANDO VENGA UN NUEVO CIR002, HAY QUE PASAR A HOJA NUEVA  
+                                                            
+  16-05-2014: SE CAMBIAN LOS NOMBRES DE LOS OVERLAYS,       
+              CIR010 Y CIR011 EN LUGAR DE CIR002 Y CIR003.  
+                                                            
+  02-09-2015: SE AMPLIAN TAMAÑOS DE CAMPOS A 100 CHARS.     
+  19-02-2019: SE ELIMINA CAMPO FECHA.                       
+  *************************************************************/
+SETUNITS  1.00 CM  1.00 CM LINESP  0.42 CM ;
+FORMDEF CIR010
+      DUPLEX NORMAL
+      BIN 1
+      JOG NO
+      OFFSET  1.00 PELS   1.00 PELS   1.00 PELS   1.00 PELS 
+      PRESENT PORTRAIT
+      DIRECTION ACROSS
+      CUTSHEET NO
+      REPLACE YES;
+
+ COPYGROUP CIR010
+      DUPLEX NORMAL
+      PRESENT PORTRAIT
+      DIRECTION ACROSS
+      CONSTANT NO;
+  OVERLAY ZZZ011 ZZZ011 NORASTER;
+  OVERLAY ZZZ010 ZZZ010 NORASTER;
+  OVERLAY ZZZ012 ZZZ012 NORASTER;
+  OVERLAY CIR010 CIR010 NORASTER;
+  SUBGROUP
+      FRONT
+      OVERLAY
+       CIR010;
+  SUBGROUP
+      BACK
+      OVERLAY
+       ZZZ012;
+
+ COPYGROUP CIR011
+      DUPLEX NORMAL
+      PRESENT PORTRAIT
+      DIRECTION ACROSS;
+  OVERLAY CIR011 CIR011 NORASTER;
+  SUBGROUP
+      BOTH
+      OVERLAY
+       CIR011;
+
+
+SETUNITS  1.00 CM  1.00 CM LINESP  0.42 CM ;
+PAGEDEF ZZZ010
+      WIDTH  20.99  
+      HEIGHT  29.69  
+      LINEONE  0.00   0.00  
+      DIRECTION ACROSS
+      REPLACE YES;
+  /*  [[ISIS FF PAGEDEF]]
+  [[]]
+  [[]]
+  [[]]
+  [[000]]
+  [[MDY]]
+  [[]]
+  [[]]
+  */
+ FONT F1 BER09N;
+ FONT F2 BEL08N;
+ FONT F3 BEL09N;
+ FONT F4 BEL12B;
+ FONT F5 BEL10N;
+ FONT F6 LC008N;
+ FONT F7 BEL10B;
+
+ PAGEFORMAT NP1
+             WIDTH  20.99  
+             HEIGHT  29.69  
+             LINEONE  0.00   0.00  
+             DIRECTION ACROSS;
+   PRINTLINE
+      CHANNEL 1
+      FONT F1
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+    CONDITION GONP1 START 1 LENGTH 1
+      SPACE_THEN_PRINT YES
+      WHEN EQ
+       'R' BEFORE SUBPAGE
+       COPYGROUP CIR011
+       PAGEFORMAT NP2
+      WHEN EQ
+       'C' BEFORE SUBPAGE
+       COPYGROUP CIR010
+       PAGEFORMAT NP1;
+  /* SELLO        */
+    FIELD START 2 LENGTH 100
+      FONT F4
+      POSITION  5.10   6.00  ;
+   PRINTLINE
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+  /* FIRMA-C-DIAR */
+    FIELD START 2 LENGTH 100
+      FONT F1
+      POSITION  11.50   3.11  ;
+   PRINTLINE
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+  /* CARGO-C-DIAR */
+    FIELD START 2 LENGTH 100
+      FONT F2
+      POSITION  11.50   3.56  ;
+   PRINTLINE
+      REPEAT 8
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+  /* DESTINATARIO */
+    FIELD START 2 LENGTH 100
+      FONT F3
+      POSITION  11.50   5.33  ;
+   PRINTLINE
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+  /* FECHA        */
+    FIELD START 2 LENGTH 100
+      FONT F5
+      POSITION  3.80   8.66  ;
+   PRINTLINE
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+  /* EXPEDIENTE   */
+    FIELD START 2 LENGTH 100
+      FONT F7
+      POSITION  6.00   10.38  ;
+
+ PAGEFORMAT NP2
+             WIDTH  20.99  
+             HEIGHT  29.69  
+             LINEONE  0.00   0.00  
+             DIRECTION ACROSS;
+   PRINTLINE
+      CHANNEL 1
+      FONT F1
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+    CONDITION GONP1;
+    FIELD START 2 LENGTH 120
+      FONT F5
+      POSITION  3.00   5.50  ;
+  /* LITERAL */
+   PRINTLINE
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+  /* PAGINA Y EXPEDIENTE              */
+    FIELD START 2 LENGTH 3
+      FONT F7
+      POSITION  18.60   28.40  ;
+    FIELD START 6 LENGTH 30
+      FONT F7
+      POSITION  10.60   6.25  ;
+   PRINTLINE
+      REPEAT 50
+      FONT F3
+      POSITION  0.00   0.00  
+      DIRECTION ACROSS;
+    FIELD START 2 LENGTH 16
+      FONT F6
+      POSITION  3.20   6.80  ;
+  /* NUMERO  */
+    FIELD START 18 LENGTH 60
+      FONT F2
+      POSITION  6.40   6.80  ;
+  /* NOMBRE  */
+    FIELD START 78 LENGTH 20
+      FONT F3
+      POSITION  16.30   6.80  ;
+  /* FECHA   
+  **  **  **  **  **  */
+  ENDSUBPAGE;
+
+
+
