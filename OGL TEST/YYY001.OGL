@@ -1,0 +1,297 @@
+ -'&&OverView OGL (ISIS Papyrus 1988-2021)'
+ -'&& OverView Windows '
+ -'&& Compiled : 2021-09-20'
+ -'&& SYSTEM          = MVS'
+ -'&& OGL VERSION     = 1.2'
+ -'&& PELS PRO DOT    = 3:1'
+ -'&& HOR. SNAPPING   = 1.00'
+ -'&& VERT. SNAPPING  = 1.00'
+ -'&& LINE_THICKNESS  = MEDIUM'
+ -'&& LINE_TYPE       = SOLID'
+ -'&& SHADE_PATTERN   = '
+ -'&& SHADE_TYPE      = '
+ -'&& ORIENTATION     = 0'
+ -'&& FORMAT          = MODERN'
+ -'&& HOR. PLACEMENT  = CENTER'
+ -'&& VERT. PLACEMENT = CENTER'
+ -'&& HOR. UNIT       = MM'
+ -'&& VERT. UNIT      = MM'
+ -'&& LINE SPACING    = AUTO'
+ -'&& CONDENSED WRITE = NOT'
+ -'&& FAST DRAWING    = 0'
+ -'&& WORD WRAPPING   = NOT'
+
+
+  SETUNITS 1.00 MM 1.00 MM 
+      LINESP 6.00 LPI ;
+  OVERLAY YYY001
+      SIZE 210.00 MM 297.00 MM 
+      OFFSET 0.00 MM 0.00 MM ;
+  CONTROL NOSTORE ALL NOSUMMARY ;
+  ORIENT 0 ;
+
+  FONT BER12B BER12B ;
+  FONT BER09N BER09N ;
+  FONT BER10B BER10B ;
+  FONT BEL07N BEL07N ;
+  FONT BER10N BER10N ;
+  FONT BER08N BER08N ;
+  FONT BEL75N BEL75N ;
+
+  SEGMENT BELOGO BELOGO  DDNAME SEGDD ;
+  SEGMENT ESCIV3 ESCIV3  DDNAME SEGDD ;
+  SEGMENT SG0001 SELCIR  DDNAME SEGDD ;
+
+  DEFINE GRP001 GROUP ;
+    POSITION ABSOLUTE 0.00 MM ABSOLUTE 0.00 MM ;
+    DRAWBOX 78.00 MM 14.00 MM LIGHT SOLID ;
+    POSITION ABSOLUTE 2.45 MM ABSOLUTE 0.70 MM ;
+    DRAWBOX 73.00 MM 6.00 MM 0 SOLID 
+      WITHTEXT 0 MODERN CENTER CENTER AUTO 
+        LINE BER12B SOSI2 NOUNDERLINE CHAR 
+          'CERTIFICADO DE LEGITIMACIÓN'
+             ;
+    POSITION ABSOLUTE 0.00 MM ABSOLUTE 7.50 MM ;
+    DRAWRULE ACROSS 78.00 MM LIGHT SOLID ;
+    POSITION ABSOLUTE 18.00 MM ABSOLUTE 7.70 MM ;
+    DRAWRULE DOWN 6.30 MM LIGHT SOLID ;
+  ENDDEF ;
+
+  DEFINE GRP002 GROUP ;
+    POSITION ABSOLUTE 0.00 MM ABSOLUTE 0.00 MM ;
+    DRAWBOX 80.00 MM 14.00 MM LIGHT SOLID ;
+    POSITION ABSOLUTE 1.00 MM ABSOLUTE 1.00 MM ;
+    DRAWBOX 78.00 MM 6.30 MM 0 SOLID 
+      WITHTEXT 0 MODERN CENTER CENTER AUTO 
+        LINE BER12B SOSI2 NOUNDERLINE CHAR 
+          'CERTIFICADO DE LEGITIMACIÓN'
+             ;
+    POSITION ABSOLUTE 0.00 MM ABSOLUTE 7.50 MM ;
+    DRAWRULE ACROSS 80.00 MM LIGHT SOLID ;
+    POSITION ABSOLUTE 18.00 MM ABSOLUTE 7.70 MM ;
+    DRAWRULE DOWN 6.30 MM LIGHT SOLID ;
+  ENDDEF ;
+
+
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 15.30 MM ;
+  PLACE SEGID BELOGO ;
+  POSITION ABSOLUTE 2.50 MM ABSOLUTE 128.00 MM ;
+  PLACE SEGID ESCIV3 ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 74.00 MM ;
+  DRAWRULE ACROSS 148.00 MM MEDIUM SOLID ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 107.00 MM ;
+  DRAWRULE ACROSS 148.00 MM MEDIUM SOLID ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 158.00 MM ;
+  DRAWRULE ACROSS 148.00 MM MEDIUM SOLID ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 209.00 MM ;
+  DRAWRULE ACROSS 147.00 MM MEDIUM SOLID ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 253.00 MM ;
+  DRAWRULE ACROSS 36.00 MM MEDIUM SOLID ;
+  SETUNITS POSITIONING CENTER ;
+  POSITION ABSOLUTE 107.00 MM ABSOLUTE 25.00 MM ;
+  DRAWBOX 16.00 MM 4.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN CENTER CENTER AUTO 
+      LINE BER09N SOSI2 NOUNDERLINE CHAR 
+        'Número'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 51.55 MM ;
+  DRAWBOX 24.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Destinatario:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 56.50 MM ;
+  DRAWBOX 39.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Fecha de expedición:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 61.50 MM ;
+  DRAWBOX 47.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Plazo de vigencia hasta:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 67.50 MM ;
+  DRAWBOX 105.00 MM 4.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BEL07N SOSI2 NOUNDERLINE CHAR 
+        '(conforme a lo dispuesto en los artículos 24.7 y '
+           SOSI2 NOUNDERLINE CHAR 
+        '21.1, segundo párrafo, del Real Decreto 814/2023)'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 76.50 MM ;
+  DRAWBOX 110.00 MM 4.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'IDENTIFICACIÓN DEL TITULAR Y DE LA CUENTA DE '
+           SOSI2 NOUNDERLINE CHAR 
+        'VALORES'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 81.50 MM ;
+  DRAWBOX 17.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Titulares:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 98.50 MM ;
+  DRAWBOX 14.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Cuenta:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 109.00 MM ;
+  DRAWBOX 64.00 MM 4.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'IDENTIFICACIÓN DE LOS VALORES'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 114.00 MM ;
+  DRAWBOX 14.00 MM 3.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Emisor:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 119.00 MM ;
+  DRAWBOX 26.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Código/Clase:'
+           ;
+  POSITION ABSOLUTE 155.00 MM ABSOLUTE 119.00 MM ;
+  DRAWBOX 31.00 MM 5.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'Nominal en Euros'
+           ;
+  POSITION ABSOLUTE 106.00 MM ABSOLUTE 16.00 MM ;
+  PLACE GROUP GRP002 ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 160.50 MM ;
+  DRAWBOX 22.00 MM 4.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER10B SOSI2 NOUNDERLINE CHAR 
+        'FINALIDAD'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 167.00 MM ;
+  DRAWBOX 148.00 MM 40.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'El BANCO DE ESPAÑA, en su condicion de entidad '
+           SOSI2 NOUNDERLINE CHAR 
+        'encargada del registro contable de los'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'valores negociados en el mercado de deuda '
+           SOSI2 NOUNDERLINE CHAR 
+        'pública en anotaciones depositados en'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'cuentas directas en el Banco de España, emite el '
+           SOSI2 NOUNDERLINE CHAR 
+        'presente certificado con la finalidad de'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'acreditar, en los términos previstos en la '
+           SOSI2 NOUNDERLINE CHAR 
+        'normativa aplicable, la titularidad de los '
+           SOSI2 NOUNDERLINE CHAR 
+        'valores'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'antes identificados.                             '
+           SOSI2 NOUNDERLINE CHAR 
+        '                  '
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'En la cuenta antes mencionada no consta inscrito '
+           SOSI2 NOUNDERLINE CHAR 
+        'ningún otro derecho real limitado o'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'gravamen sobre los valores identificados.        '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                     '
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'La emisión del presente certificado conlleva la '
+           SOSI2 NOUNDERLINE CHAR 
+        'inmovilización registral del saldo de los'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'valores antes identificados, con el alcance '
+           SOSI2 NOUNDERLINE CHAR 
+        'previsto en la normativa aplicable.'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 212.00 MM ;
+  DRAWBOX 148.00 MM 18.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'Y, para que conste a los efectos oportunos, '
+           SOSI2 NOUNDERLINE CHAR 
+        'firmo el presente certificado de conformidad'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'con el registro contable de los valores '
+           SOSI2 NOUNDERLINE CHAR 
+        'negociados en el mercado de deuda pública en'
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'anotaciones depositados en cuentas directas en '
+           SOSI2 NOUNDERLINE CHAR 
+        'el Banco de España.                    '
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        'Banco de España                                  '
+           SOSI2 NOUNDERLINE CHAR 
+        '                          '
+           
+      LINE BER10N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 266.00 MM ;
+  DRAWBOX 148.00 MM 14.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BER08N SOSI2 NOUNDERLINE CHAR 
+        'IMPORTANTE: Será imprescindible la presentación '
+           SOSI2 NOUNDERLINE CHAR 
+        'ante el Banco de España del presente certificado '
+           SOSI2 NOUNDERLINE CHAR 
+        'para que pueda'
+           
+      LINE BER08N SOSI2 NOUNDERLINE CHAR 
+        'procederse al levantamiento de la inmovilización '
+           SOSI2 NOUNDERLINE CHAR 
+        'registral de los valores de acuerdo con lo '
+           SOSI2 NOUNDERLINE CHAR 
+        'previsto en la normativa'
+           
+      LINE BER08N SOSI2 NOUNDERLINE CHAR 
+        'aplicable antes del transcursao del plazo de '
+           SOSI2 NOUNDERLINE CHAR 
+        'vigencia del presente certificado. Una vez '
+           SOSI2 NOUNDERLINE CHAR 
+        'expire el plazo de vigencia, el'
+           
+      LINE BER08N SOSI2 NOUNDERLINE CHAR 
+        'Banco de España procederá de oficio al '
+           SOSI2 NOUNDERLINE CHAR 
+        'levantamiento de la inmovilización el siguiente '
+           SOSI2 NOUNDERLINE CHAR 
+        'día hábil.'
+           
+      LINE BER08N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 284.50 MM ;
+  DRAWBOX 119.00 MM 6.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP LEFT AUTO 
+      LINE BEL75N SOSI2 NOUNDERLINE CHAR 
+        'Calle Alcalá, 48  28014 Madrid    Teléfono   +34 '
+           SOSI2 NOUNDERLINE CHAR 
+        '91 338 5000     Fax: +34 91 531 0059    '
+           SOSI2 NOUNDERLINE CHAR 
+        'www.bde.es '
+           
+      LINE BEL75N SOSI2 NOUNDERLINE CHAR 
+        ''
+           ;

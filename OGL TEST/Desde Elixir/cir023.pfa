@@ -1,0 +1,214 @@
+ /**************************************************************/               
+ /*                                                            */               
+ /*  ELIXIR PAGE DEFINITION CIR023                             */               
+ /*                                                            */               
+ /*  Name:           CIR023                                    */               
+ /*  Created:        19-Jul-2013   08:33                       */               
+ /*  Last revision:  17-Jan-2017   08:39                       */               
+ /*                                                            */               
+ /*                                                            */               
+ /**************************************************************/               
+                                                                                
+       SETUNITS     1 CM 1 CM                                                   
+                    LINESP          6.000 LPI;                                  
+                                                                                
+        PAGEDEF     CIR023  /*CIR023                          Thi
+s PageDef was created in Elixir.
+*/                                                                              
+                    WIDTH           29.693                                      
+                    HEIGHT          21.006                                      
+                    LINEONE         0.000 0.000                                 
+                    DIRECTION       ACROSS                                      
+                    REPLACE         YES                                         
+                    PELSPERINCH     300;                                        
+                                                                                
+           FONT     BEL09B                                                      
+                    BEL09B;                                                     
+                                                                                
+           FONT     BEL09N                                                      
+                    BEL09N;                                                     
+                                                                                
+           FONT     BEL07N                                                      
+                    BEL07N;                                                     
+                                                                                
+           FONT     LC007N                                                      
+                    LC007N;                                                     
+                                                                                
+     PAGEFORMAT     CIR023  /*CIR023                          */                
+                    WIDTH           29.693                                      
+                    HEIGHT          21.006                                      
+                    LINEONE         0.000 0.000                                 
+                    DIRECTION       ACROSS                                      
+                    PELSPERINCH     300;                                        
+                                                                                
+       SETUNITS     LINESP          0.425 CM;                                   
+                                                                                
+      PRINTLINE  /*NuevaPagina                     */                           
+                    FONT            BEL07N                                      
+                    DIRECTION       ACROSS                                      
+                    CHANNEL         1                                           
+                    POSITION        27.197 2.356;                               
+                                                                                
+      CONDITION     COND                                                        
+                    START           1                                           
+                    LENGTH          6                                           
+                    SPACE_THEN_PRINT NO                                         
+                    WHEN            EQ 1                                        
+'DETAL1'                                                                        
+                                    COPYGROUP CIR023                            
+                                    PAGEFORMAT CIR023                           
+                    WHEN            EQ 1                                        
+'AGREG1'                                                                        
+                                    COPYGROUP CIR024                            
+                                    PAGEFORMAT CIR024                           
+                    WHEN            EQ 1                                        
+'DETALL'                                                                        
+                                    NEWSIDE                                     
+                    WHEN            EQ 1                                        
+'AGREGA'                                                                        
+                                    NEWSIDE;                                    
+                                                                                
+       SETUNITS     LINESP          0.425 CM;                                   
+                                                                                
+          FIELD  /*Pag                             */                           
+                    START           7                                           
+                    LENGTH          100                                         
+                    POSITION        0.711 16.499                                
+                    DIRECTION       ACROSS;                                     
+                                                                                
+      PRINTLINE  /*Titular                         */                           
+                    FONT            BEL09N                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        5.159 3.412;                                
+                                                                                
+      PRINTLINE  /*RSocial                         */                           
+                    FONT            BEL09N                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        12.685 3.412;                               
+                                                                                
+      PRINTLINE  /*Nombre                          */                           
+                    FONT            BEL09N                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        10.400 3.797;                               
+                                                                                
+      PRINTLINE  /*Fecha                           */                           
+                    FONT            BEL09B                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        8.411 4.400;                                
+                                                                                
+       SETUNITS     LINESP          0.370 CM;                                   
+                                                                                
+      PRINTLINE  /*LineaDetalle                    */                           
+                    FONT            LC007N                                      
+                    DIRECTION       ACROSS                                      
+                    REPEAT          34 LINE                                     
+                    POSITION        1.338 5.900;                                
+                                                                                
+       SETUNITS     LINESP          6.000 LPI;                                  
+                                                                                
+     PAGEFORMAT     CIR024  /*CIR024                          */                
+                    WIDTH           29.693                                      
+                    HEIGHT          21.006                                      
+                    LINEONE         0.000 0.000                                 
+                    DIRECTION       ACROSS                                      
+                    PELSPERINCH     300;                                        
+                                                                                
+       SETUNITS     LINESP          0.425 CM;                                   
+                                                                                
+      PRINTLINE  /*NuevaPagina                     */                           
+                    FONT            BEL07N                                      
+                    DIRECTION       ACROSS                                      
+                    CHANNEL         1                                           
+                    POSITION        27.197 2.356;                               
+                                                                                
+      CONDITION     COND;                                                       
+                                                                                
+       SETUNITS     LINESP          5.976 LPI;                                  
+                                                                                
+          FIELD  /*Pag                             */                           
+                    START           7                                           
+                    LENGTH          100                                         
+                    POSITION        0.483 16.499                                
+                    DIRECTION       ACROSS;                                     
+                                                                                
+      PRINTLINE  /*Titular                         */                           
+                    FONT            BEL09N                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        5.265 3.412;                                
+                                                                                
+      PRINTLINE  /*RSocial                         */                           
+                    FONT            BEL09N                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        12.685 3.412;                               
+                                                                                
+      PRINTLINE  /*Nombre                          */                           
+                    FONT            BEL09N                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        10.400 3.797;                               
+                                                                                
+      PRINTLINE  /*Fecha                           */                           
+                    FONT            BEL09B                                      
+                    DIRECTION       ACROSS                                      
+                    POSITION        8.411 4.400;                                
+                                                                                
+       SETUNITS     LINESP          0.370 CM;                                   
+                                                                                
+      PRINTLINE  /*LineaDetalle                    */                           
+                    FONT            LC007N                                      
+                    DIRECTION       ACROSS                                      
+                    REPEAT          34 LINE                                     
+                    POSITION        1.338 5.900;                                
+ /**************************************************************/               
+ /*                                                            */               
+ /*  ELIXIR FORM DEFINITION CIR023                             */               
+ /*                                                            */               
+ /*  Name:           CIR023                                    */               
+ /*  Created:        19-Jul-2013   08:33                       */               
+ /*  Last revision:  17-Jan-2017   08:39                       */               
+ /*                                                            */               
+ /*                                                            */               
+ /**************************************************************/               
+                                                                                
+       SETUNITS     1 CM 1 CM;                                                  
+                                                                                
+        FORMDEF     CIR023  /*CIR023                          */                
+                    DUPLEX          NORMAL                                      
+                    OFFSET          0.000 0.000 0.000 0.000                     
+                    PRESENT         LANDSCAPE                                   
+                    ADJUST          0                                           
+                    QUALITY         1                                           
+                    CONSTANT        NO                                          
+                    PELSPERINCH     300                                         
+                    REPLACE         YES                                         
+                    XMSIZE          0.000 CM                                    
+                    YMSIZE          0.000 CM;                                   
+                                                                                
+      COPYGROUP     CIR023  /*CIR023                          */                
+                    DUPLEX          NORMAL                                      
+                    JOG             NO                                          
+                    OFFSET          0.000 0.000 0.000 0.000                     
+                    PRESENT         LANDSCAPE                                   
+                    DIRECTION       ACROSS                                      
+                    ADJUST          0                                           
+                    QUALITY         1                                           
+                    CONSTANT        NO                                          
+                    PELSPERINCH     300;                                        
+                                                                                
+       SUBGROUP  /*CIR023                          */                           
+                    OVERLAY                                                     
+                                    CIR023;                                     
+                                                                                
+      COPYGROUP     CIR024  /*CIR024                          */                
+                    DUPLEX          NORMAL                                      
+                    JOG             NO                                          
+                    OFFSET          0.000 0.000 0.000 0.000                     
+                    PRESENT         LANDSCAPE                                   
+                    DIRECTION       ACROSS                                      
+                    ADJUST          0                                           
+                    QUALITY         1                                           
+                    CONSTANT        NO                                          
+                    PELSPERINCH     300;                                        
+                                                                                
+       SUBGROUP  /*CIR024                          */                           
+                    OVERLAY                                                     
+                                    CIR024;                                     
