@@ -1,0 +1,192 @@
+ -'&&OverView OGL (ISIS Papyrus 1988-2021)'
+ -'&& OverView Windows '
+ -'&& Compiled : 2021-09-20'
+ -'&& SYSTEM          = MVS'
+ -'&& OGL VERSION     = 1.2'
+ -'&& PELS PRO DOT    = 2:1'
+ -'&& HOR. SNAPPING   = 1.00'
+ -'&& VERT. SNAPPING  = 1.00'
+ -'&& LINE_THICKNESS  = MEDIUM'
+ -'&& LINE_TYPE       = SOLID'
+ -'&& SHADE_PATTERN   = '
+ -'&& SHADE_TYPE      = '
+ -'&& ORIENTATION     = 0'
+ -'&& FORMAT          = MODERN'
+ -'&& HOR. PLACEMENT  = CENTER'
+ -'&& VERT. PLACEMENT = CENTER'
+ -'&& HOR. UNIT       = MM'
+ -'&& VERT. UNIT      = MM'
+ -'&& LINE SPACING    = AUTO'
+ -'&& CONDENSED WRITE = NOT'
+ -'&& FAST DRAWING    = 0'
+ -'&& WORD WRAPPING   = NOT'
+
+
+  SETUNITS 1.00 MM 1.00 MM 
+      LINESP 6.00 LPI ;
+  OVERLAY PYA009
+      SIZE 210.00 MM 297.00 MM 
+      OFFSET 0.00 MM 0.00 MM ;
+  CONTROL NOSTORE ALL NOSUMMARY ;
+  ORIENT 0 ;
+
+  DEFINE COL00000 COLOR RGB RVAL 0 GVAL 0 BVAL 0 ;
+
+  FONT BRB0 BRB0 ;
+  FONT BRN0 BRN0 ;
+  FONT BLN0 BLN0 ;
+  FONT BLB45 BLB45 ;
+  FONT BRN6 BRN6 ;
+
+  SEGMENT BELOGO BELOGO  DDNAME SEGDD ;
+
+
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 15.24 MM ;
+  PLACE SEGID BELOGO ;
+  SETUNITS POSITIONING CENTER ;
+  POSITION ABSOLUTE 29.97 MM ABSOLUTE 106.41 MM ;
+  DRAWBOX 5.08 MM 5.08 MM LIGHT SOLID ;
+  POSITION ABSOLUTE 29.97 MM ABSOLUTE 140.90 MM ;
+  DRAWBOX 5.08 MM 5.08 MM LIGHT SOLID ;
+  POSITION ABSOLUTE 136.00 MM ABSOLUTE 19.00 MM ;
+  SETTEXT 0 MODERN CENTER AUTO 
+      LINE BRN0 SOSI2 NOUNDERLINE CHAR 
+        'Recursos Humanos'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 71.00 MM ;
+  SETTEXT 0 MODERN CENTER AUTO 
+      LINE BRB0 SOSI2 NOUNDERLINE CHAR 
+        'Nº préstamo:'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 84.63 MM ;
+  DRAWBOX 148.00 MM 18.37 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'El/La abajo firmante, empleado/a del Banco de '
+           SOSI2 NOUNDERLINE CHAR 
+        'España, beneficiario/a de un préstamo para'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'adquisición de su vivienda, declara:             '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           SOSI2 NOUNDERLINE CHAR 
+        '                              '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Que de conformidad con lo dispuesto en el '
+           SOSI2 NOUNDERLINE CHAR 
+        'Reglamento especial de préstamos de vivienda:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 106.00 MM ;
+  DRAWBOX 148.00 MM 10.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '1. Habita de forma habitual y permanente, '
+           SOSI2 NOUNDERLINE CHAR 
+        'constituyendo su domicilio familiar, la vivienda'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'adquirida con ayuda del préstamo de que es '
+           SOSI2 NOUNDERLINE CHAR 
+        'titular, sita en:'
+           ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 140.50 MM ;
+  DRAWBOX 148.00 MM 10.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '2. Dicha vivienda no ha sido objeto de hipoteca, '
+           SOSI2 NOUNDERLINE CHAR 
+        'venta, arrendamiento u otro tipo de cesión'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'onerosa o gratuita, sin el consentimiento '
+           SOSI2 NOUNDERLINE CHAR 
+        'expreso al efecto del Banco.'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 191.50 MM ;
+  DRAWBOX 148.00 MM 14.00 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Lo que hace constar a los efectos previstos en '
+           SOSI2 NOUNDERLINE CHAR 
+        'los artículos 1, 8 y 16 del vigente Reglamento de'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'préstamos en favor de los/as empleados/as del '
+           SOSI2 NOUNDERLINE CHAR 
+        'Banco de España, para el acceso a la'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'propiedad de sus viviendas'
+           ;
+  POSITION ABSOLUTE 6.00 MM ABSOLUTE 283.21 MM ;
+  SETTEXT 0 MODERN CENTER AUTO 
+      LINE BLB45 SOSI2 NOUNDERLINE CHAR 
+        'PYA009'
+           ;
+ -'&& COLOR           = COL00000'
+
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 274.00 MM ;
+  DRAWRULE ACROSS 20.07 MM LIGHT SOLID COLOR COL00000 ;
+  SETUNITS 1.00 MM 1.00 MM 
+      LINESP 6.00 LPI ;
+  POSITION ABSOLUTE 38.00 MM ABSOLUTE 275.00 MM ;
+  DRAWBOX 148.00 MM 16.00 MM 0 SOLID 
+    BCOLOR COL00000 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BRN6 SOSI2 NOUNDERLINE CHAR 
+        'Le informamos de que los datos personales '
+           SOSI2 NOUNDERLINE CHAR 
+        'incluidos en este formulario son objeto de '
+           SOSI2 NOUNDERLINE CHAR 
+        'tratamiento por el Banco de España con la '
+           SOSI2 NOUNDERLINE CHAR 
+        'finalidad de realizar el'
+           
+      LINE BRN6 SOSI2 NOUNDERLINE CHAR 
+        'trámite solicitado. Puede ejercer sus derechos '
+           SOSI2 NOUNDERLINE CHAR 
+        'de acceso, rectificación, oposición y supresión, '
+           SOSI2 NOUNDERLINE CHAR 
+        'así como los demás derechos que se indican en la '
+           SOSI2 NOUNDERLINE CHAR 
+        'Política de'
+           
+      LINE BRN6 SOSI2 NOUNDERLINE CHAR 
+        'Privacidad de Empleados, ya sea presencialmente, '
+           SOSI2 NOUNDERLINE CHAR 
+        'por correo postal a C/Alcalá 48, 28014, Madrid '
+           SOSI2 NOUNDERLINE CHAR 
+        '(A/A Delegado de Protección de Datos) o '
+           SOSI2 NOUNDERLINE CHAR 
+        'electrónicamente'
+           
+      LINE BRN6 SOSI2 NOUNDERLINE CHAR 
+        'a través del procedimiento indicado en la '
+           SOSI2 NOUNDERLINE CHAR 
+        'Política de Privacidad de Empleados '
+           SOSI2 NOUNDERLINE CHAR 
+        '(http://bdenred.bde.es/intranet/es/Pie/politica-de-priv'
+           SOSI2 NOUNDERLINE CHAR 
+        '/). Para más información,'
+           
+      LINE BRN6 SOSI2 NOUNDERLINE CHAR 
+        'consulte nuestro Registro de Actividades de '
+           SOSI2 NOUNDERLINE CHAR 
+        'Tratamiento                                      '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           
+      LINE BRN6 SOSI2 NOUNDERLINE CHAR 
+        '(https://www.bde.es/bde/es/secciones/sobreelbanco/Transp'
+           SOSI2 NOUNDERLINE CHAR 
+        'arencia/Informacion_inst/registro-de-acti/Beneficios_soc'
+           SOSI2 NOUNDERLINE CHAR 
+        'iales.html).'
+           ;
