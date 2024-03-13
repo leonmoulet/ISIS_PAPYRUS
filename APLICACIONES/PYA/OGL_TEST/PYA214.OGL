@@ -1,0 +1,303 @@
+ -'&&OverView OGL (ISIS Papyrus 1988-2021)'
+ -'&& OverView Windows '
+ -'&& Compiled : 2021-09-20'
+ -'&& SYSTEM          = MVS'
+ -'&& OGL VERSION     = 1.2'
+ -'&& PELS PRO DOT    = 2:1'
+ -'&& HOR. SNAPPING   = 1.00'
+ -'&& VERT. SNAPPING  = 1.00'
+ -'&& LINE_THICKNESS  = MEDIUM'
+ -'&& LINE_TYPE       = SOLID'
+ -'&& SHADE_PATTERN   = '
+ -'&& SHADE_TYPE      = '
+ -'&& ORIENTATION     = 0'
+ -'&& FORMAT          = MODERN'
+ -'&& HOR. PLACEMENT  = CENTER'
+ -'&& VERT. PLACEMENT = CENTER'
+ -'&& HOR. UNIT       = MM'
+ -'&& VERT. UNIT      = MM'
+ -'&& LINE SPACING    = AUTO'
+ -'&& CONDENSED WRITE = NOT'
+ -'&& FAST DRAWING    = 0'
+ -'&& WORD WRAPPING   = NOT'
+
+
+  SETUNITS 1.00 MM 1.00 MM 
+      LINESP 6.00 LPI ;
+  OVERLAY PYA214
+      SIZE 210.00 MM 297.00 MM 
+      OFFSET 0.00 MM 0.00 MM ;
+  CONTROL NOSTORE ALL NOSUMMARY ;
+  ORIENT 0 ;
+
+  FONT BRN0 BRN0 ;
+  FONT BLN0 BLN0 ;
+  FONT BLN9 BLN9 ;
+  FONT BLB45 BLB45 ;
+  FONT BLN75 BLN75 ;
+
+  SEGMENT BELOGO BELOGO  DDNAME SEGDD ;
+  SEGMENT FIRSFB FIRSFB  DDNAME SEGDD ;
+  SEGMENT SECOMP SECOMP  DDNAME SEGDD ;
+
+
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 14.99 MM ;
+  PLACE SEGID BELOGO ;
+  POSITION ABSOLUTE 148.00 MM ABSOLUTE 18.00 MM ;
+  SETTEXT 0 MODERN CENTER AUTO 
+      LINE BRN0 SOSI2 NOUNDERLINE CHAR 
+        'Recursos Humanos'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 53.50 MM ;
+  SETTEXT 0 MODERN LEFT SPACED 4.40 MM 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Don/Doña:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'NIF:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Domicilio:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Provincia:'
+           ;
+  POSITION ABSOLUTE 114.00 MM ABSOLUTE 86.40 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Madrid,       de                     de'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 99.75 MM ;
+  DRAWBOX 147.00 MM 17.25 MM 0 SOLID 
+    WITHTEXT 0 MODERN TOP JUSTIFY LASTNO AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Como titular del préstamo de vivienda núm.       '
+           SOSI2 NOUNDERLINE CHAR 
+        '               , concedido por el Banco de España'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'por  un importe  principal  de                   '
+           SOSI2 NOUNDERLINE CHAR 
+        '  €  y  formalizado  con  fecha                  '
+           SOSI2 NOUNDERLINE CHAR 
+        '   , pongo'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'en su conocimiento los datos facilitados a la '
+           SOSI2 NOUNDERLINE CHAR 
+        'Agencia Tributaria, en cumplimiento de lo'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'establecido en la Orden EHA/3514/2009 para el '
+           SOSI2 NOUNDERLINE CHAR 
+        'año                                              '
+           SOSI2 NOUNDERLINE CHAR 
+        '           '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ' '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ' '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '  '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ' '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           SOSI2 NOUNDERLINE CHAR 
+        '   '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '                                                 '
+           SOSI2 NOUNDERLINE CHAR 
+        '                                 '
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ' '
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 124.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Desde el'
+           ;
+  POSITION ABSOLUTE 72.50 MM ABSOLUTE 124.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'hasta el'
+           ;
+  POSITION ABSOLUTE 105.50 MM ABSOLUTE 124.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ', para la financiación de la vivienda situada en:'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 137.00 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '1. Capital amortizado:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '2. Intereses:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '          2.1. Intereses abonados:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '          2.2. Retribución en especie:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '          2.3. Ingreso a cuenta:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '3. Gastos (prima de seguro):'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '        '
+           ;
+  POSITION ABSOLUTE 115.00 MM ABSOLUTE 145.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           ;
+  POSITION ABSOLUTE 133.00 MM ABSOLUTE 137.00 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 166.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'Desde el'
+           ;
+  POSITION ABSOLUTE 72.50 MM ABSOLUTE 166.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        'hasta el'
+           ;
+  POSITION ABSOLUTE 105.50 MM ABSOLUTE 166.50 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ', para la financiación de la vivienda situada en:'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 179.50 MM ;
+  SETTEXT 0 MODERN LEFT SPACED 4.25 MM 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '1. Capital amortizado:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '2. Intereses:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '          2.1. Intereses abonados:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '          2.2. Retribución en especie:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '          2.3. Ingreso a cuenta:'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '3. Gastos (prima de seguro):'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '4. Débito a'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '        '
+           ;
+  POSITION ABSOLUTE 115.00 MM ABSOLUTE 188.00 MM ;
+  SETTEXT 0 MODERN LEFT SPACED 4.25 MM 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           ;
+  POSITION ABSOLUTE 133.00 MM ABSOLUTE 179.50 MM ;
+  SETTEXT 0 MODERN LEFT SPACED 4.25 MM 
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        ''
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           
+      LINE BLN0 SOSI2 NOUNDERLINE CHAR 
+        '€'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 247.00 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN9 SOSI2 NOUNDERLINE CHAR 
+        'Susana Fuerte Bermejo'
+           
+      LINE BLN9 SOSI2 NOUNDERLINE CHAR 
+        'Jefa de División de '
+           
+      LINE BLN9 SOSI2 NOUNDERLINE CHAR 
+        'Compensación y Beneficios Sociales'
+           ;
+  POSITION ABSOLUTE 10.00 MM ABSOLUTE 283.20 MM ;
+  SETTEXT 0 MODERN CENTER AUTO 
+      LINE BLB45 SOSI2 NOUNDERLINE CHAR 
+        'PYA214'
+           ;
+  POSITION ABSOLUTE 38.10 MM ABSOLUTE 281.00 MM ;
+  SETTEXT 0 MODERN LEFT AUTO 
+      LINE BLN75 SOSI2 NOUNDERLINE CHAR 
+        'Calle Alcalá, 48   28014 Madrid    Teléfono  + '
+           SOSI2 NOUNDERLINE CHAR 
+        '34 91 338 5000   Fax  + 34 91 338 531 0059   '
+           SOSI2 NOUNDERLINE CHAR 
+        'www.bde.es'
+           ;
+  POSITION ABSOLUTE 37.59 MM ABSOLUTE 224.54 MM ;
+  PLACE SEGID FIRSFB ;
+  POSITION ABSOLUTE 80.77 MM ABSOLUTE 217.42 MM ;
+  PLACE SEGID SECOMP ;
